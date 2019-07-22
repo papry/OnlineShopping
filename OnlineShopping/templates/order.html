@@ -1,0 +1,20 @@
+
+{% load static %}
+<html>
+<link rel ="stylesheet" href="{% static 'dg.css'%}" >
+
+<body>
+<h1> Order Confirm</h1>
+<form action="" method="post">
+    {%csrf_token%}
+Product_code:<input type="text" name="code"><br/><br/>
+    Quantity:<input type="text" name="quantity"><br/><br/>
+    price:<input type="text" name="price"><br/><br/>
+    Total:<input type="text" name="total"><br/><br/>
+ 
+<button type="submit">Confirm</button><br/><br/>
+
+
+</form>
+</body>
+</html>

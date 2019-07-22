@@ -1,0 +1,41 @@
+{%load static%}
+
+<html>
+
+<body>
+<form action="">
+<table border=1>
+<tr align="center">
+<td >
+
+<img src ="{% static 'img.jpg'%}" width="200" height="200"><br/>
+    {% for p in post %}
+
+
+    {{p.Price}}
+    {%endfor%}
+</td>
+<td>
+<img src ="{% static 'img8.jpg'%}" width="200" height="200"><br/> <br>
+     {% for take in demo %}
+     {{take.Price}}
+     {%endfor%}
+</td>
+<td>
+<img src ="{% static 'img1.jpg' %}" width="200" height="200"><br/>
+</td>
+<td>
+<img src ="{% static 'img7.jpg' %}" width="200" height="200"><br/>
+</td>
+<td>
+<img src ="{% static 'img5.jpg'%}" width="200" height="200"><br/>
+</td>
+<td>
+<img src ="{% static 'img6.jpg' %}" width="200" height="200"><br/>
+</td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>
