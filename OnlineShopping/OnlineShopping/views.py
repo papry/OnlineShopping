@@ -22,8 +22,7 @@ def login(request):
 
 
 def product(request):
-
-    post = Product.objects.filter()
+    post = Product.objects.all()
     context = {"post": post}
     return render(request,"product.html",context)
 
@@ -50,9 +49,20 @@ def order(request):
         total  = request.POST.get("total")
         obj = Payment(product_code=code,quantity=quantity,Price=price,total=total)
         obj.save()
-        return render(request,"home.html")
+        return render(request,"login.html")
     else:
         return render(request,"order.html")
-def feedback(request):
-    return render(request,"feedback.html")
-
+def feedback2(request):
+    if request.method=='POST':
+        name2 = request.POST.get("name2")
+        email2 = request.POST.get("email2")
+        message1 = request.POST.get("message")
+        obj = feedback(feedname=name2,email=email2,message=message1)
+        obj.save()
+        return render(request,"login.html")
+    else:
+        return render(request,"feedback.html")
+def review(request):
+    obj = feedback.objects.all()
+    context = {"obj": obj}
+    return render(request, "review.html", context)
