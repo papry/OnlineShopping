@@ -5,15 +5,15 @@
 
 <body>
 
-<form action="" method="post">
+<form action="" method="POST">
+  {%csrf_token%}
 <h1>Feedback </h1>
 <h2>********</h2>
-  {%csrf_token%}
-<input type="text"  placeholder="Enter your Name" name="name2"><br/><br/>
+<input type="text"  placeholder="Enter your Name" name="name2" value="{{p.feedname}}"><br/><br/>
       
-<input type="text"placeholder="Enter your Email"name="email2"><br/><br/>
+<input type="text"placeholder="Enter your Email" name="email2"><br/><br/>
 
-<textarea rows="5" cols="21" placeholder="Enter Message Here...."name="message"></textarea><br/><br/>
+<textarea rows="5" cols="21" placeholder="Enter Message Here...." name="message"></textarea><br/><br/>
 
 <input type ="submit" value="SEND"><br/><br/>
 

@@ -15,21 +15,19 @@ class Admin(models.Model):
 
 
 class Customer(models.Model):
-    Customer_name = models.CharField(max_length=250, default="")
-    Email= models.CharField(max_length=250, default="")
-    Password = models.CharField(max_length=250, default="")
-    Phone_no= models.CharField(max_length=250, default="")
+    Customer_name = models.CharField(max_length=250,null=True, blank=True, default="")
+    Email= models.CharField(max_length=250,null=True, blank=True, default="")
+    Password = models.CharField(max_length=250,null=True, blank=True, default="")
+    Phone_no= models.CharField(max_length=250,null=True, blank=True, default="")
 
 
 class Product(models.Model):
-   # Customer=models.ForeignKey(Customer,on_delete='CASCADE')
-   # Category = models.ForeignKey(category,on_delete='CASCADE')
-   # Supplier = models.ForeignKey(Supplier, on_delete='CASCADE')
+
     product_Id = models.CharField(max_length=200,default="")
     Product_name = models.CharField(max_length=250, default="")
     description = models.CharField(max_length=250, default="")
-    Stock = models.IntegerField(default=20000)
-    Price = models.IntegerField( default=1)
+    Stock =models.CharField(max_length=250, default="")
+    Price = models.CharField(max_length=250, default="")
 
 
 
@@ -37,7 +35,7 @@ class Product(models.Model):
 
 
 class Payment(models.Model):
-    #Customer = models.ForeignKey(Customer, on_delete='CASCADE')
+
     product_code=models.CharField(max_length=250, default="")
     quantity = models.CharField(max_length=250, default="")
     Price = models.CharField(max_length=250, default="")
@@ -47,6 +45,6 @@ class Payment(models.Model):
 
 
 class feedback(models.Model):
-    c_Name = models.CharField(max_length=250, default="")
+    feedname = models.CharField(max_length=250, default="")
     email = models.CharField(max_length=250, default="")
     message = models.CharField(max_length=250, default="")
