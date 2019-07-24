@@ -1,0 +1,19 @@
+{% load static%}
+<html lang="en">
+<link rel ="stylesheet" href="{% static 'r.css'%}" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> REVIEW_CHECK </h1>
+<h2> *********</h2>
+<form action="">
+ {% for p in obj %}
+    {{p.feedname}}<br/>
+    {{p.email}}<br/>
+    {{p.message}}
+    {%endfor%}
+</form>
+</body>
+</html>
