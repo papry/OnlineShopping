@@ -2,8 +2,12 @@
 
 <html>
 
+
+
 <body>
 <form action="">
+<input type="submit" value="description" formaction="http://127.0.0.1:8000/product">
+<right><input type="submit" value="Order" formaction="http://127.0.0.1:8000/order"> </right>
 <table border=1>
 
 <tr align="center">
@@ -12,23 +16,25 @@
 <img src ="{% static 'img.jpg'%}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '01' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code: {{p.product_Id}}<br/>
+Product_name: {{p.Product_name}}<br/>
+description: {{p.description}}<br/>
+      stock: {{p.Stock}}<br/>
+       price: {{ p.Price}}
       {% endif %}
     {%endfor%}
+
+
 </td>
 <td>
 <img src ="{% static 'img8.jpg'%}" width="200" height="200"><br/> <br>
     {% for p in post %}
       {% if p.product_Id == '02' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}<br/>
       {% endif %}
     {%endfor%}
 
@@ -37,11 +43,11 @@
 <img src ="{% static 'img1.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '03' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -49,11 +55,11 @@
 <img src ="{% static 'img7.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '04' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -61,11 +67,11 @@
 <img src ="{% static 'img5.jpg'%}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '05' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -73,11 +79,11 @@
 <img src ="{% static 'img6.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '06' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code: {{p.product_Id}}<br/>
+ Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td></tr>
@@ -86,11 +92,11 @@
 <img src ="{% static '1.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '07' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+ Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -98,11 +104,11 @@
 <img src ="{% static '2.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '08' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+ Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -110,11 +116,11 @@
 <img src ="{% static '3.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '09' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -122,11 +128,11 @@
 <img src ="{% static '4.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '10' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -134,11 +140,11 @@
 <img src ="{% static '5.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '11' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>
@@ -146,11 +152,11 @@
 <img src ="{% static '6.jpg' %}" width="200" height="200"><br/>
     {% for p in post %}
       {% if p.product_Id == '12' %}
-           {{p.product_Id}}<br/>
-           {{p.Product_name}}<br/>
-           {{p.description}}<br/>
-           {{p.Stock}}<br/>
-           {{ p.Price}}
+product_code:{{p.product_Id}}<br/>
+Product_name:{{p.Product_name}}<br/>
+description:{{p.description}}<br/>
+      stock:{{p.Stock}}<br/>
+       price:{{ p.Price}}
       {% endif %}
     {%endfor%}
 </td>

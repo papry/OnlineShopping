@@ -49,7 +49,7 @@ def order(request):
         total  = request.POST.get("total")
         obj = Payment(product_code=code,quantity=quantity,Price=price,total=total)
         obj.save()
-        return render(request,"login.html")
+        return render(request,"feedback.html")
     else:
         return render(request,"order.html")
 def feedback2(request):

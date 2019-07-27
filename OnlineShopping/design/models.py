@@ -36,10 +36,10 @@ class Product(models.Model):
 
 class Payment(models.Model):
 
-    product_code=models.CharField(max_length=250, default="")
-    quantity = models.CharField(max_length=250, default="")
-    Price = models.CharField(max_length=250, default="")
-    total= models.CharField(max_length=250, default="")
+    product_code=models.CharField(max_length=250,null=True, blank=True, default="")
+    quantity = models.CharField(max_length=250,null=True, blank=True, default="")
+    Price = models.CharField(max_length=250,null=True, blank=True, default="")
+    total= models.CharField(max_length=250,null=True, blank=True, default="")
 
 
 

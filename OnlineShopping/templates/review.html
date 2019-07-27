@@ -6,13 +6,16 @@
     <title>Title</title>
 </head>
 <body>
+<form action="">
+    <RIGHT><input type="submit" value="FEEDBACK" formaction="http://127.0.0.1:8000/feedback"> </RIGHT>
+    <input type="submit" value="SignOut" formaction="http://127.0.0.1:8000/">
 <h1> REVIEW_CHECK </h1>
 <h2> *********</h2>
-<form action="">
+
  {% for p in obj %}
     {{p.feedname}}<br/>
     {{p.email}}<br/>
-    {{p.message}}
+    {{p.message}}<br/><br/>
     {%endfor%}
 </form>
 </body>
